@@ -6,6 +6,8 @@ $( document ).ready(function() {
     addDropdown(x, y);
   });
 
+
+
   var addFrame = function(x, y){
     var $frame = $( "<div>", {class: 'frame' } );
     $frame.css( "margin-top", y );
@@ -16,6 +18,9 @@ $( document ).ready(function() {
         });
     $frame.append( $closeFrame);
     $( '#container' ).append( $frame );
+    $closeFrame.click(function() {
+      this.parentElement.remove();
+    });
   };
 
   var addDropdown = function(x, y){
