@@ -8,7 +8,6 @@ var clickEvent = {
       var x = e.pageX;
       var y = e.pageY;
       clickEvent.addFrame(x, y);
-      clickEvent.addDropdown(x, y);
     });
   },
 
@@ -21,18 +20,17 @@ var clickEvent = {
         text: "X"
         });
     $frame.append( $closeFrame);
+    clickEvent.addDropdown($frame);
     $( '#container' ).append( $frame );
     $closeFrame.click(function() {
       this.parentElement.remove();
     });
   },
 
-  addDropdown: function(x, y){
+  addDropdown: function(frame){
     var $dropdown = $( "<div>", { class: 'dropdown' } );
-    $dropdown.css( "margin-top", y );
-    $dropdown.css( "margin-left", x );
     $dropdown.append( "<form id='character-selection'><select name='characters'><option value='waldo'>Waldo</option><option value='wenda'>Wenda</option><option value='odlaw'>Odlaw</option><option value='wizard'>Wizard Whitebeard</option><option value='woof'>Woof</option></select><input type='submit' value='Submit' class='submit'></form>");
-    $( '#container' ).append( $dropdown );
+    frame.append($dropdown);
     $( '.submit' ).click(function(event){
       event.preventDefault();
       console.log( "hello?" );

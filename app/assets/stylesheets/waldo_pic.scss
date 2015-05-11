@@ -28,10 +28,7 @@ $offset: $size * 0.5;
 }
 
 .dropdown {
-  transform: translate($offset, -$offset);
-  height: $size;
-  width: $size;
-  border: 3px solid red;
+  transform: translateX($size);
   position: absolute;
   box-sizing:border-box;
 }
