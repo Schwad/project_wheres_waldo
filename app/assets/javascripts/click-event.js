@@ -1,12 +1,18 @@
 $( document ).ready(function(){
-  $( '#background' ).click(function(e){
-    var x = e.pageX;
-    var y = e.pageY;
-    addFrame(x, y);
-    addDropdown(x, y);
-  });
+  clickEvent.init();
+});
 
-  var addFrame = function(x, y){
+var clickEvent = {
+  init: function(){
+    $( '#background' ).click(function(e){
+      var x = e.pageX;
+      var y = e.pageY;
+      clickEvent.addFrame(x, y);
+      clickEvent.addDropdown(x, y);
+    });
+  },
+
+  addFrame: function(x, y){
     var $frame = $( "<div>", {class: 'frame' } );
     $frame.css( "margin-top", y );
     $frame.css( "margin-left", x );
@@ -19,9 +25,9 @@ $( document ).ready(function(){
     $closeFrame.click(function() {
       this.parentElement.remove();
     });
-  };
+  },
 
-  var addDropdown = function(x, y){
+  addDropdown: function(x, y){
     var $dropdown = $( "<div>", { class: 'dropdown' } );
     $dropdown.css( "margin-top", y );
     $dropdown.css( "margin-left", x );
@@ -31,5 +37,5 @@ $( document ).ready(function(){
       event.preventDefault();
       console.log( "hello?" );
     });
-  };
-});
+  }
+}
