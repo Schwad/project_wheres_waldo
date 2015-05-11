@@ -8,14 +8,6 @@ TODO
 
 Photo Tag
 
-The first step is to enable the functionality for registering a user's click somewhere on the photo.
-  - click event that collects the X and Y coordinates of the click.
-  - console log the coordinates
-
-Build a basic controller and view which contains a photo.
-  - add WaldoPicController
-  - simple layout with huge pic in background (show action)
-
 When the user clicks on the photo, it should pop up a "Targeting Box" which surrounds the click area.
   - adds div to page to acknowledge the click.
     - $ object with 'top' and 'left' matching click coords, -50% translateThere should be a dropdown menu where the user can select from the available characters to associate with that Tag.
