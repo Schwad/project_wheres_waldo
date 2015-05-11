@@ -1,10 +1,12 @@
 $( document ).ready(function() {
   $( window ).click(function(e){
-    var x = e.pageX;
-    var y = e.pageY;
-    console.log("X: " + x + ", Y: " + y);
-    $frame = $( "<div>", {class: 'frame', } );
-    $frame.css( "margin-top", y );
+    $frame = $( "<div>", {class: 'frame' } );
+    $frame.css( "margin-top", e.pageY );
+    $frame.css( "margin-left", e.pageX );
     $( '#container' ).append( $frame );
+    $dropdown = $( "<div>", {class: 'dropdown' } );
+    $dropdown.css( "margin-top", e.pageY );
+    $dropdown.css( "margin-left", e.pageX );
+    $( '#container' ).append( $dropdown );
   });
 });

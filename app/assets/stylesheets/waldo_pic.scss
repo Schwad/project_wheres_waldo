@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$size: 100px;
+$offset: $size * 0.5;
+
 #container {
   position: relative;
   height: 1760px;
@@ -10,8 +13,17 @@
 }
 
 .frame {
-  height: 100px;
-  width: 100px;
+  transform: translate(-$offset, -$offset);
+  height: $size;
+  width: $size;
   border: 3px solid black;
+  position: absolute;
+}
+
+.dropdown {
+  transform: translate($offset, -$offset);
+  height: $size;
+  width: $size;
+  border: 3px solid red;
   position: absolute;
 }
