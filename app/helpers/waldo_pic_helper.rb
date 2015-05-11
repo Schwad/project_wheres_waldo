@@ -1,0 +1,2 @@
+module WaldoPicHelper
+end
