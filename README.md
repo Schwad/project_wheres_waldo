@@ -9,7 +9,7 @@ TODO
 Photo Tag
 
 There should be a dropdown menu where the user can select from the available characters to associate with that Tag.
-  - turn dropdown into proper form
+  - move dropdown into frame so that it is affiliated with the frame.
   - add closing function to remove dropdown when submitted
 
 When the user selects a character, it should create a Tag associated with that character at that location. Just do this on the front end for now.
