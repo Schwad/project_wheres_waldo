@@ -7,9 +7,10 @@ $offset: $size * 0.5;
 
 #container {
   position: relative;
-  height: 1760px;
-  width: 2800px;
-  background-image: url('../background.jpg');
+}
+
+#background {
+  position: absolute;
 }
 
 .frame {
@@ -18,6 +19,7 @@ $offset: $size * 0.5;
   width: $size;
   border: 3px solid black;
   position: absolute;
+  box-sizing:border-box;
 }
 
 .dropdown {
@@ -26,4 +28,5 @@ $offset: $size * 0.5;
   width: $size;
   border: 3px solid red;
   position: absolute;
+  box-sizing:border-box;
 }
