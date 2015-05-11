@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-  $( window ).click(function(){
-    console.log("click!");
+  $( window ).click(function(e){
+    console.log("X: " + e.pageX);
+    console.log("Y: " + e.pageY);
   });
 });
