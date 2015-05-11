@@ -9,10 +9,13 @@ TODO
 Photo Tag
 
 There should be a dropdown menu where the user can select from the available characters to associate with that Tag.
-    - Add dropdown to side of selection box. <- Rails form?
+  - create "remove frame" functionality
+  - turn dropdown into proper form
+  - add closing function to remove dropdown
 
 When the user selects a character, it should create a Tag associated with that character at that location. Just do this on the front end for now.
   - From submit adds jQuery object to page at the click coordinates (with character name?)
+  - Add character name to frame.
 
 When the user hovers over the photo, all current Tags should be visible. When the mouse leaves the photo, Tags should disappear and the photo should look normal.
   - pic is too big for any room to NOT be hovering.
