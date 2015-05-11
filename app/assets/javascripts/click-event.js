@@ -30,6 +30,7 @@ var clickEvent = {
       var name = $("select").val();
       var $name = $( "<div>", { class: 'name', text: name } );
       $frame.append( $name );
+      $( '.dropdown' ).remove();
     });
   },
 
