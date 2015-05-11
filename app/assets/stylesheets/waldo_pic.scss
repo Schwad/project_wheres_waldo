@@ -1,3 +1,17 @@
 // Place all the styles related to the WaldoPic controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#container {
+  position: relative;
+  height: 1600px;
+  width: 2800px;
+  background-image: url('../background.jpg');
+}
+
+.frame {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  position: absolute;
+}

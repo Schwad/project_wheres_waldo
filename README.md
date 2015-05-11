@@ -20,3 +20,10 @@ When the user hovers over the photo, all current Tags should be visible. When th
   - pic is too big for any room to NOT be hovering.
 
 For now, refreshing the page will reset the photo Tags. That's okay.
+
+WHERE IS...
+  Waldo: X: 1600, Y: 625
+  Wenda: X: 1100, Y: 600
+  Odlaw: X: 1130, Y: 1160
+  Wizard: X: 2400, Y: 1500
+  Woof:

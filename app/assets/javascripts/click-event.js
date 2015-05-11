@@ -1,6 +1,9 @@
 $( document ).ready(function() {
   $( window ).click(function(e){
-    console.log("X: " + e.pageX);
-    console.log("Y: " + e.pageY);
+    var x = e.pageX;
+    var y = e.pageY;
+    console.log("X: " + x + ", Y: " + y);
+    $frame = $( "<div>", { class: 'frame' } );
+    $( '#container' ).append( $frame )
   });
 });
