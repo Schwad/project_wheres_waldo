@@ -11,7 +11,9 @@ class TagsController < ApplicationController
   def create
     @tag = Tag.new(whitelisted_tag_params)
     respond_to do |format|
-      format.js {}
+      if @tag.save
+        format.js {}
+      end
     end
   end
 
