@@ -5,3 +5,33 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Character.create(
+  x: 1600,
+  y: 625,
+  name: 'Waldo',
+)
+
+Character.create(
+  x: 1100,
+  y: 600,
+  name: 'Wenda',
+)
+
+Character.create(
+  x: 1130,
+  y: 1160,
+  name: 'Odlaw',
+)
+
+Character.create(
+  x: 2400,
+  y: 1500,
+  name: 'Wizard',
+)
+
+Character.create(
+  x: 1925,
+  y: 1100,
+  name: 'Woof',
+)
