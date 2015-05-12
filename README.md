@@ -6,20 +6,21 @@ He totally didn't pay his bill.
 
 TODO
 
-Photo Tag
+Persisting Tags
 
-There should be a dropdown menu where the user can select from the available characters to associate with that Tag.
-  - move dropdown into frame so that it is affiliated with the frame.
-  - add closing function to remove dropdown when submitted
+Set up the Rails models needed to persist a given Tag and to manage the list of available characters.
+  - Tag model, x & y coordinates, character
+  - Character model, name only
+  - Tag create populates with available characters
 
-When the user selects a character, it should create a Tag associated with that character at that location. Just do this on the front end for now.
-  - From submit adds jQuery object to page at the click coordinates (with character name?)
-  - Add character name to frame.
+Make your front-end Tag event send an AJAX request to the back end which persists that event.
 
-When the user hovers over the photo, all current Tags should be visible. When the mouse leaves the photo, Tags should disappear and the photo should look normal.
-  - pic is too big for any room to NOT be hovering.
 
-For now, refreshing the page will reset the photo Tags. That's okay.
+Return the proper object or template and update the DOM with the successful Tag only upon successful persisting of the event.
+Verify that Tag now persists the data in your Rails app and only updates the DOM on success.
+Set up your app to load all Tags on the image when the page refreshes.
+Implement a DELETE button or link on each Tag which will remove the persisted Tag and then remove the Tag from the DOM upon success.
+  -- Tag#destroy route
 
 WHERE IS...
   Waldo: X: 1600, Y: 625
