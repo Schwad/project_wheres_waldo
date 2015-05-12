@@ -13,7 +13,9 @@ Make your front-end Tag event send an AJAX request to the back end which persist
 
 
 Return the proper object or template and update the DOM with the successful Tag only upon successful persisting of the event.
+
 Verify that Tag now persists the data in your Rails app and only updates the DOM on success.
+
 Set up your app to load all Tags on the image when the page refreshes.
 Implement a DELETE button or link on each Tag which will remove the persisted Tag and then remove the Tag from the DOM upon success.
   -- Tag#destroy route
