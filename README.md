@@ -27,4 +27,4 @@ WHERE IS...
   Wenda: X: 1100, Y: 600
   Odlaw: X: 1130, Y: 1160
   Wizard: X: 2400, Y: 1500
-  Woof:
+  Woof: X: 1925, Y: 1100
