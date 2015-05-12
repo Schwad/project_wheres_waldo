@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root "waldo_pic#show"
 
   resource :waldo_pic, only: [:show]
-  resources :tags, only: [:create]
+  resources :tags, only: [:new, :create]
 
 
 

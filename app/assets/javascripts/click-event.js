@@ -7,7 +7,18 @@ var clickEvent = {
     $( '#background' ).click(function(e){
       var x = e.pageX;
       var y = e.pageY;
-      clickEvent.addFrame(x, y);
+      // clickEvent.addFrame(x, y);
+      $.ajax({
+        url: '/tags/new.js',
+        method: 'get',
+        success: function(){
+          console.log("It worked!");
+        },
+        error: function(){
+          console.log("wow such fail");
+        },
+        dataType: "js.erb"
+      });
     });
   },
 
