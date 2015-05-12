@@ -5,12 +5,10 @@ $( document ).ready(function(){
 var clickEvent = {
   init: function(){
     $( '#background' ).click(function(e){
-      var x = e.pageX;
-      var y = e.pageY;
-      // clickEvent.addFrame(x, y);
       $.ajax({
         url: '/tags/new.js',
         method: 'get',
+        data: { x: e.pageX, y: e.pageY },
         success: function(){
           console.log("It worked!");
         },

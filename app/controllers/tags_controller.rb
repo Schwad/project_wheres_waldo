@@ -1,7 +1,6 @@
 class TagsController < ApplicationController
 
   def new
-    # binding.pry
     @tag = Tag.new
     respond_to do |format|
       format.js {}
