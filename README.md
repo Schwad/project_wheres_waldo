@@ -9,8 +9,8 @@ TODO
 Persisting Tags
 
 Set up the Rails models needed to persist a given Tag and to manage the list of available characters.
-  - Tag model, x & y coordinates, character
-  - Character model, name only
+  - Tag model, x & y coordinates, character_id (foreign key)
+  - Character model, name and canonical X Y coordinates
   - Tag create populates with available characters
 
 Make your front-end Tag event send an AJAX request to the back end which persists that event.
