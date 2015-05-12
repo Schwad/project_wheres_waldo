@@ -17,7 +17,7 @@ var clickEvent = {
         error: function(){
           console.log("wow such fail");
         },
-        dataType: "js.erb"
+        dataType: "script"
       });
     });
   },
