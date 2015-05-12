@@ -1,7 +1,7 @@
 class TagsController < ApplicationController
 
   def new
-    @tag = Tag.new
+    @tag = Tag.new tag_coordinates
     respond_to do |format|
       format.js {}
     end
@@ -20,6 +20,10 @@ class TagsController < ApplicationController
 
   def whitelisted_tag_params
     params.require(:tag).permit(:name, :x, :y)
+  end
+
+  def tag_coordinates
+    {x: params["x"], y: params["y"]}
   end
 
 end

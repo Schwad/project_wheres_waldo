@@ -9,12 +9,6 @@ var clickEvent = {
         url: '/tags/new.js',
         method: 'get',
         data: { x: e.pageX, y: e.pageY },
-        success: function(){
-          console.log("It worked!");
-        },
-        error: function(){
-          console.log("wow such fail");
-        },
         dataType: "script"
       });
     });
