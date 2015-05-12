@@ -18,7 +18,7 @@ var clickEvent = {
     var $frame = $( "<div>", {class: 'frame' } );
     $frame.css( "margin-left", x ).css( "margin-top", y );
     clickEvent.addCloseFrame($frame);
-    clickEvent.addDropdown($frame);
+    // clickEvent.addDropdown($frame);
     $( '#container' ).append( $frame );
     clickEvent.addCloseFrameListener();
     clickEvent.addDropdownListener($frame);

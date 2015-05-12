@@ -1,1 +1,7 @@
 clickEvent.addFrame(<%= @tag.x %>, <%= @tag.y %>);
+
+$( '' )
+
+var $dropdown = $( "<div>", { class: 'dropdown' } );
+$dropdown.append( "<%= j(render partial: form, locals: {tag: @tag} ) %>");
+$( '.frame' ).append($dropdown);
