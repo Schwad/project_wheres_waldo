@@ -1,5 +1,7 @@
-<%= form_for :tag, :remote => true do |f| %>
+<%= form_for @tag, :remote => true do |f| %>
   <%= collection_select(:tag, :character_id, Character.all, :id, :name) %>
+  <%= hidden_field(:tag, :x) %>
+  <%= hidden_field(:tag, :y) %>
   <br />
   <%= f.submit %>
 <% end %>

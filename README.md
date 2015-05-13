@@ -3,6 +3,8 @@ project_wheres_waldo
 
 He totally didn't pay his bill.
 
+CREATE.JS.ERB CONSOLE.LOG TAG CREATED FTW IS WHERE WE LEFT OFF!
+
 
 TODO
 

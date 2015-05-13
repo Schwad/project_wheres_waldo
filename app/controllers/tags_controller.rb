@@ -19,7 +19,7 @@ class TagsController < ApplicationController
   private
 
   def whitelisted_tag_params
-    params.require(:tag).permit(:name, :x, :y)
+    params.require(:tag).permit(:character_id, :x, :y)
   end
 
   def tag_coordinates
