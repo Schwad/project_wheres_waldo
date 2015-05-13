@@ -5,5 +5,3 @@ var $dropdown = $( "<div>", { class: 'dropdown' } );
 
 $dropdown.append( "<%= j(render partial: 'form', locals: {tag: @tag} ) %>");
 $lastFrame.append($dropdown);
-
-clickEvent.addDropdownListener( $lastFrame );

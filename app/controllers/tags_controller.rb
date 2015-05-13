@@ -9,6 +9,7 @@ class TagsController < ApplicationController
 
   def create
     @tag = Tag.new(whitelisted_tag_params)
+    @character = Character.find @tag.character_id
     respond_to do |format|
       if @tag.save
         format.js {}
