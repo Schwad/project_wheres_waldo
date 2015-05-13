@@ -3,19 +3,10 @@ project_wheres_waldo
 
 He totally didn't pay his bill.
 
-Troubleshoot create.js.erb not adding .name div to last frame.
 
 TODO
 
 Persisting Tags
-
-Make your front-end Tag event send an AJAX request to the back end which persists that event.
-  - Tag create populates with available characters
-
-
-Return the proper object or template and update the DOM with the successful Tag only upon successful persisting of the event.
-
-Verify that Tag now persists the data in your Rails app and only updates the DOM on success.
 
 Set up your app to load all Tags on the image when the page refreshes.
 Implement a DELETE button or link on each Tag which will remove the persisted Tag and then remove the Tag from the DOM upon success.

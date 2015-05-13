@@ -1,5 +1,9 @@
 class TagsController < ApplicationController
 
+  def index
+
+  end
+
   def new
     @tag = Tag.new tag_coordinates
     respond_to do |format|

@@ -1,4 +1,6 @@
 $( '.dropdown' ).remove();
 
 var $name = $( "<div>", { class: 'name', text: '<%= @character.name %>' } );
-$( '.frame' ).last().append( $name );
+var $frame = $( '.frame' ).last();
+$frame.append( $name );
+$frame.attr( 'id', '<%= @character.name %>');
