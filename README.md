@@ -9,6 +9,9 @@ TODO
 
 Persisting Tags
 
+EDIT AJAX DELETE WITH FRAME ID!
+
+
 Implement a DELETE button or link on each Tag which will remove the persisted Tag and then remove the Tag from the DOM upon success.
   -- Tag#destroy route
 

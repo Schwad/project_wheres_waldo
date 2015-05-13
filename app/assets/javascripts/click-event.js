@@ -32,10 +32,11 @@ var clickEvent = {
 
   addCloseFrameListener: function(){
     $( '.close-frame' ).click(function() {
-      $.ajax({
-        url: '/tags/:id.js',
-        method: 'delete'
-      });
+      console.log( this.parentElement.id );
+      // $.ajax({
+      //   url: '/tags/:id.js',
+      //   method: 'delete'
+      // });
       this.parentElement.remove();
     });
   },
