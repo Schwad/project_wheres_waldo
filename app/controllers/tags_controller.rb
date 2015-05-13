@@ -2,7 +2,7 @@ class TagsController < ApplicationController
 
   def index
     @tags = Tag.all
-
+    @characters = Character.all
   end
 
   def new

@@ -36,6 +36,13 @@ var clickEvent = {
     });
   },
 
+  addNameToFrame: function(name){
+    var $name = $( "<div>", { class: 'name', text: name } );
+    var $frame = $( '.frame' ).last();
+    $frame.append( $name );
+    $frame.attr( 'id', name );
+  },
+
   addDropdownListener: function(frame){
     $( '.submit' ).click(function(event){
       var character = $("select").val();

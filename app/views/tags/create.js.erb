@@ -1,6 +1,2 @@
 $( '.dropdown' ).remove();
-
-var $name = $( "<div>", { class: 'name', text: '<%= @character.name %>' } );
-var $frame = $( '.frame' ).last();
-$frame.append( $name );
-$frame.attr( 'id', '<%= @character.name %>');
+clickEvent.addNameToFrame('<%= @character.name %>')
