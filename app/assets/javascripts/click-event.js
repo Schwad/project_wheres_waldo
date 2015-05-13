@@ -32,15 +32,21 @@ var clickEvent = {
 
   addCloseFrameListener: function(){
     $( '.close-frame' ).click(function() {
+      $.ajax({
+        url: '/tags/:id.js',
+        method: 'delete'
+      });
       this.parentElement.remove();
     });
   },
 
   addNameToFrame: function(name){
     var $name = $( "<div>", { class: 'name', text: name } );
-    var $frame = $( '.frame' ).last();
-    $frame.append( $name );
-    $frame.attr( 'id', name );
+    $( '.frame' ).last().append( $name );
+  },
+
+  addTagIDToFrame: function(tagID){
+    $( '.frame' ).last().attr( 'id', tagID );
   },
 
   addDropdownListener: function(frame){

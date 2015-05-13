@@ -7,13 +7,8 @@ He totally didn't pay his bill.
 TODO
 
 
-WE NEED TO ITERATE OVER ALL TAGS AND DISPLAY THEM.
-
-WE ARE STRUGGLING W/O ACCESS TO JS.ERB
-
 Persisting Tags
 
-Set up your app to load all Tags on the image when the page refreshes.
 Implement a DELETE button or link on each Tag which will remove the persisted Tag and then remove the Tag from the DOM upon success.
   -- Tag#destroy route
 

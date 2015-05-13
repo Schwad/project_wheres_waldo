@@ -5,6 +5,7 @@
     <%= javascript_tag do %>
       clickEvent.addFrame(<%= tag.x %>, <%= tag.y %>);
       clickEvent.addNameToFrame('<%= name %>');
+      clickEvent.addTagIDToFrame('<%= tag.id %>');
     <% end %>
   <% end %>
 </div>

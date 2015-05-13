@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root "tags#index"
 
-  resources :tags, only: [:new, :create, :index]
+  resources :tags, only: [:new, :create, :index, :destroy]
 
 
 
