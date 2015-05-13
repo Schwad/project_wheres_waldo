@@ -32,13 +32,17 @@ var clickEvent = {
 
   addCloseFrameListener: function(){
     $( '.close-frame' ).click(function() {
-      console.log( this.parentElement.id );
-      // $.ajax({
-      //   url: '/tags/:id.js',
-      //   method: 'delete'
-      // });
-      this.parentElement.remove();
+      var tagID = this.parentElement.id;
+      $.ajax({
+        url: '/tags/' + tagID + '.js',
+        method: 'delete',
+        dataType: "script"
+      });
     });
+  },
+
+  removeFrame: function(tagID){
+    $('#' + tagID).remove();
   },
 
   addNameToFrame: function(name){
