@@ -20,7 +20,7 @@ var clickEvent = {
     clickEvent.addCloseFrame($frame);
     $( '#container' ).append( $frame );
     clickEvent.addCloseFrameListener();
-    // clickEvent.addDropdownListener($frame);
+    clickEvent.addDropdownListener($frame);
   },
 
   addCloseFrame: function(frame){
@@ -39,7 +39,6 @@ var clickEvent = {
 
   addDropdownListener: function(frame){
     $( '.submit' ).click(function(event){
-      event.preventDefault();
       var character = $("select").val();
       var $name = $( "<div>", { class: 'name', text: character } );
       frame.append( $name );
