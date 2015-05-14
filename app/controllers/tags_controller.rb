@@ -1,8 +1,13 @@
 class TagsController < ApplicationController
 
+  protect_from_forgery :except => :index
+
   def index
     @tags = Tag.all
-    @characters = Character.all
+    respond_to do |format|
+      # format.html {}
+      format.js {}
+    end
   end
 
   def new

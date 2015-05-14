@@ -4,6 +4,13 @@ $( document ).ready(function(){
 
 var clickEvent = {
   init: function(){
+
+    $.ajax({
+      url: '/tags.js',
+      method: 'get',
+      dataType: 'script'
+    });
+
     $( '#background' ).click(function(e){
       $.ajax({
         url: '/tags/new.js',
